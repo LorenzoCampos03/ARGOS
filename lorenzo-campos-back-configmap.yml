@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: lorenzo-campos-back-configmap
+  namespace: default
+data:
+  PORT: "7070"
+  DATABASE_URL: "r2dbc:postgresql://ep-morning-silence-adutkfl5-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require"
+  DATABASE_USERNAME: "neondb_owner"
+  SERVER_URL: "http://lorenzo-campos-back-service:7070"
